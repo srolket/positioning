@@ -46,6 +46,41 @@ body {
     transform: rotate(-60deg);
 }
 
+
+.logo-mickey {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.logo-mickey .head {
+    width: 60px;
+    height: 60px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-mickey .ear {
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+}
+
+.logo-mickey .left {
+    left: 5px;
+}
+
+.logo-mickey .right {
+    right: 5px;
+}
+
 .lightbox-btn {
     margin-top: 40px;
     padding: 12px 28px;

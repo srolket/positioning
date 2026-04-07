@@ -199,7 +199,6 @@ body {
     margin: 6px 0;
 }
 
-/* ===== ПРОГРЕСС БАР ===== */
 
 .progress {
     position: relative;
@@ -214,17 +213,16 @@ body {
     justify-content: center;
 }
 
-/* красная часть */
 .bar {
     position: absolute;
-    left: 0;        /* ВАЖНО */
-    top: 0;         /* на всякий */
+    left: 0;        
+    top: 0;        
     height: 100%;
     width: 40%;
-    background: red;
+    background: crimson;
 }
 
-/* текст */
+
 .text {
     position: absolute;
     left: 0;
@@ -236,7 +234,6 @@ body {
     font-size: 18px;
 }
 
-/* черный текст */
 .text-black {
     color: black;
     z-index: 1;
@@ -245,5 +242,4 @@ body {
 .text-white {
     color: white;
     z-index: 2;
-    clip-path: inset(0 60% 0 0); /* 100 - 40 */
 }

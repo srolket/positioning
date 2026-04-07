@@ -1,0 +1,44 @@
+body {
+    background: white;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background: #61dafb;
+    border-radius: 50%;
+    position: absolute;
+    top: 42px;
+    left: 42px;
+}
+
+.ellipse {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    border: 4px solid #61dafb;
+    border-radius: 50%;
+    top: 30px;
+    box-sizing: border-box;
+}
+
+.e1 {
+    transform: rotate(0deg);
+}
+
+.e2 {
+    transform: rotate(60deg);
+}
+
+.e3 {
+    transform: rotate(-60deg);
+}

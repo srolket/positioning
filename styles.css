@@ -128,21 +128,75 @@ body {
     padding: 0 6px;
 }
 
-.modal-content h1 {
-    margin-top: 0;
-    font-size: 1.9rem;
+.modal-content {
+    margin-top: 8px;
 }
 
-.modal-content p {
-    line-height: 1.5;
-    color: #1e1e2a;
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-kbd {
-    background: #f0f0f0;
-    border-radius: 6px;
-    padding: 2px 6px;
+.accordion-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fefefe;
+    width: 95%;
+}
+
+.accordion-input {
+    display: none;
+}
+
+.accordion-label {
+    display: block;
+    padding: 16px 20px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background: #f7f7f9;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    border-bottom: 1px solid transparent;
+}
+
+.accordion-label::after {
+    content: "▼";
+    float: right;
     font-size: 0.9rem;
+    color: #61dafb;
+}
+
+.accordion-input:checked + .accordion-label::after {
+    transform: rotate(180deg);
+}
+
+.accordion-body {
+    display: none;
+    padding: 0 20px 16px 20px;
+    background: white;
+    border-top: 1px solid #eee;
+    line-height: 1.5;
+    color: #2c3e50;
+}
+
+.accordion-input:checked ~ .accordion-body {
+    display: block;
+}
+
+.accordion-body p {
+    margin: 12px 0;
+}
+
+.accordion-body ul {
+    margin: 8px 0 12px 20px;
+    padding-left: 0;
+}
+
+.accordion-body li {
+    margin: 6px 0;
 }
 
 /* ===== ПРОГРЕСС БАР ===== */
